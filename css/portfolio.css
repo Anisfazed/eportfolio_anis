@@ -1,0 +1,231 @@
+  body {
+      background-color: #fdfdfd;
+      background: linear-gradient(to left, #ffffff, #f5ff68); 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .hero-img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+
+    .sidebar {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .sidebar a i:hover {
+      transform: scale(1.2);
+      transition: transform 0.2s ease;
+    }
+
+
+    .profile-img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .main-content {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #0d6efd;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .skills-container {
+      background-color: #0d6efd;
+      border-radius: 10px;
+      padding: 40px 20px;
+    }
+
+    .skill-item {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      text-align: center;
+    }
+
+    .skill-circle {
+      transform: rotate(-90deg);
+      width: 140px;
+      height: 140px;
+    }
+
+    .skill-circle circle {
+      fill: none;
+      stroke-width: 10;
+      stroke-linecap: round;
+    }
+
+    .skill-circle .bg {
+      stroke: #e6e6e6;
+    }
+
+    .skill-circle .progress {
+      stroke: #ffffff;
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      transition: stroke-dashoffset 1s ease;
+    }
+
+    .skill-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .skill-percent {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .skill-name {
+      font-size: 14px;
+    }
+
+    .timeline {
+      position: relative;
+      margin-left: 20px;
+      padding-left: 30px;
+      border-left: 2px solid #e9ff98;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #98ff8f;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 20px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -11px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background: hsl(85, 100%, 70%);
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+    }
+
+    .skill-lang-chart {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .chart {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: conic-gradient(#fcef7b var(--value), #fdc4bc 0%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      font-size: 14px;
+      font-weight: bold;
+      flex-direction: column;
+      color: #333;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .chart i {
+      font-size: 20px;
+      margin-bottom: 5px;
+      color: #333;
+;
+    }
+
+    .chart-label {
+      font-size: 12px;
+      margin-top: 5px;
+      text-align: center;
+      color: #555;
+    }
+
+    .custom-btn {
+      transition: all 0.3s ease;
+      font-weight: bold;
+      border-radius: 50px;
+    }
+
+    .custom-btn:hover {
+      background-color: #0d6efd;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+    }
+
+    .skills-icons-section {
+      background-color: #ffc3c3;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .skills-bars {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 25px;
+      height: 250px;
+      margin-top: 40px;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 22px;
+      position: relative;
+    }
+
+    .skill i {
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .skill .bar {
+      width: 12px;
+      background-color: #f1f38e;
+      border-radius: 8px 8px 0 0;
+      transition: height 0.3s ease;
+    }
+
+    .skill span {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #000;
+    }
